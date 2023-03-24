@@ -1,0 +1,422 @@
+/* CSS Code for Havin Digital website */
+
+/* Global Styles */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #ff8c00;
+  color: #fff;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transform: translateY(-5px);
+}
+
+/* Navigation */
+
+nav {
+  background: linear-gradient(to bottom right, #f47721, #dd2476, #4724dd);
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 50px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+}
+
+nav a.logo {
+  font-size: 30px;
+  font-weight: bold;
+  color: #fff;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li a {
+  display: block;
+  padding: 0 20px;
+  line-height: 60px;
+  transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+  background-color: #1d3557;
+  color: #fff;
+  border-radius: 30px;
+}
+
+nav .menu-icon {
+  cursor: pointer;
+  display: none;
+  font-size: 25px;
+  color: #fff;
+}
+
+@media only screen and (max-width: 800px) {
+  nav {
+    padding: 0 20px;
+  }
+  nav ul li a {
+    padding: 0 10px;
+  }
+  nav .menu-icon {
+    display: block;
+  }
+  nav ul.active {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  nav ul.active li {
+    margin: 10px 0;
+  }
+}
+
+/* Home Section */
+
+#home {
+  background-color: #fff;
+  color: #333;
+  padding: 100px 0;
+  text-align: center;
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.banner {
+  background-image: url('https://dummyimage.com/1600x900/555555/ffffff');
+  background-size: cover;
+  height: 600px;
+  display: flex;
+  align-items: center;
+}
+
+.banner-content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.banner h1 {
+  font-size: 60px;
+  margin-bottom: 20px;
+}
+
+.banner p {
+  font-size: 24px;
+  margin-bottom: 40px;
+}
+
+.btn {
+  display: inline-block;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 20px 40px;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-primary {
+  background-color: #FF8C00;
+  color: #fff;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #FFA500;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .banner {
+    height: 400px;
+  }
+
+  .banner h1 {
+    font-size: 40px;
+  }
+
+  .banner p {
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+
+  .btn {
+    font-size: 18px;
+    padding: 15px 30px;
+  }
+}
+
+
+/* Service Section */
+
+.service-section {
+  background-color: #fff;
+  padding: 80px 0;
+}
+
+.service-box {
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s;
+  margin-bottom: 50px;
+}
+
+.service-box:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.3);
+}
+
+.service-icon {
+  margin-bottom: 20px;
+}
+
+.service-icon i {
+  font-size: 3rem;
+  color: #1d3557;
+}
+
+.service-title {
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #1d3557;
+  margin-bottom: 15px;
+}
+
+.service-text {
+  color: #777;
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+
+.service-link {
+  color: #1d3557;
+  font-weight: 700;
+}
+
+.service-box:hover {
+  background-image: linear-gradient(to right, #6d33a7, #f67e7d);
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+  color: white;
+}
+
+.service-box:hover h4 {
+  color: white;
+}
+
+.service-box:hover p {
+  color: white;
+}
+
+.service-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 50px auto;
+  max-width: 1000px;
+}
+
+.service-box {
+  background-color: #fff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 30px;
+  margin-bottom: 30px;
+  width: calc(33.33% - 20px);
+  transition: background-color 0.3s ease;
+}
+
+.service-box:hover {
+  background-color: #29365f;
+}
+
+.service-box h3 {
+  font-size: 28px;
+  margin-bottom: 10px;
+  color: #ff8300;
+  transition: color 0.3s ease;
+}
+
+.service-box:hover h3 {
+  color: #fff;
+}
+
+.service-box p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.service-box a {
+  font-size: 18px;
+  color: #29365f;
+  transition: color 0.3s ease;
+}
+
+.service-box a:hover {
+  color: #ff8300;
+}
+
+.service-box-icon {
+  font-size: 50px;
+  margin-bottom: 20px;
+  color: #ff8300;
+}
+
+
+/* Contact Section */
+
+.contact-section {
+  background-color: #f9f9f9;
+  padding: 80px 0;
+}
+
+.contact-title {
+  font-weight: 700;
+  font-size: 2.5rem;
+  color: #1d3557;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.contact-form {
+  margin-top: 30px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-label {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.form-input {
+  width: 100%;
+  padding: 10px;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+}
+
+.form-input:focus {
+  outline: none;
+  box-shadow: 0px 0px 5px #1d3557;
+}
+
+.form-textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  height: 150px;
+}
+
+.form-textarea:focus {
+  outline: none;
+  box-shadow: 0px 0px 5px #1d3557;
+}
+
+.form-submit {
+  display: block;
+  margin-top: 20px;
+  padding: 10px 30px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  border: none;
+  border-radius: 5px;
+  background-color: #1d3557;
+  color: #fff;
+  cursor: pointer;
+}
+
+.form-submit:hover {
+  background-color: #fca311;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+footer p {
+  margin: 0;
+  font-size: 1.2em;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* About Section */
+#about {
+  background: #fff;
+  padding: 50px;
+}
+.about-container {
+  max-width: 1200px;
+  margin: auto;
+  text-align: justify;
+}
+.about-container h2 {
+  font-size: 40px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.about-container p {
+  font-size: 18px;
+  line-height: 28px;
+  margin-bottom: 25px;
+  color: #666;
+}
